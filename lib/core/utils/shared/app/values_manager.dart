@@ -1,0 +1,97 @@
+class AppMargin {
+  static const double margin5 = 5.0;
+  static const double margin8 = 8.0;
+  static const double margin12 = 12.0;
+  static const double margin14 = 14.0;
+  static const double margin15 = 15.0;
+  static const double margin16 = 16.0;
+  static const double margin18 = 18.0;
+  static const double margin20 = 20.0;
+  static const double margin80 = 80.0;
+  static const double margin100 = 100.0;
+  static const double margin130 = 130.0;
+}
+
+class AppPadding {
+  static const double padding0 = 0.0;
+  static const double padding1 = 1.0;
+  static const double padding5 = 5.0;
+  static const double padding8 = 8.0;
+  static const double padding10 = 10.0;
+  static const double padding12 = 12.0;
+  static const double padding14 = 14.0;
+  static const double padding15 = 15.0;
+  static const double padding16 = 16.0;
+  static const double padding18 = 18.0;
+  static const double padding20 = 20.0;
+  static const double padding25 = 25.0;
+  static const double padding50 = 50.0;
+  static const double padding65 = 65.0;
+  static const double padding70 = 70.0;
+  static const double padding90 = 90.0;
+  static const double padding100 = 100.0;
+  static const double padding150 = 150.0;
+  static const double padding155 = 155.0;
+  static const double padding200 = 200.0;
+  static const double padding210 = 210.0;
+  static const double padding300 = 300.0;
+}
+
+class AppSize {
+  static const double sizMinus60 = -60;
+  static const double size_3 = 0.2;
+  static const double size_5 = 0.5;
+  static const double size_0 = 0;
+  static const int size1 = 1;
+  static const double size1_5 = 1.50;
+  static const double size2_3 = 2.30;
+  static const double size2_5 = 2.50;
+  static const double size3 = 3.0;
+  static const double size2 = 2.0;
+  static const double size3_5 = 3.50;
+  static const double size4 = 4.0;
+  static const double size5 = 5.0;
+  static const double size5_5 = 5.5;
+  static const double size6 = 6.0;
+  static const double size8 = 8.0;
+  static const double size10 = 10.0;
+  static const double size12 = 12.0;
+  static const double size14 = 14.0;
+  static const double size15 = 15.0;
+  static const double size16 = 16.0;
+  static const double size17 = 17.0;
+  static const double size18 = 18.0;
+  static const double size20 = 20.0;
+  static const double size30 = 30.0;
+  static const double size35 = 35.0;
+  static const double size40 = 40.0;
+  static const double size50 = 50.0;
+  static const double size60 = 60.0;
+  static const double size64 = 64.0;
+  static const double size65 = 65.0;
+  static const double size68 = 68.0;
+  static const double size70 = 70.0;
+  static const double size80 = 80.0;
+  static const double size90 = 90.0;
+  static const double size100 = 100.0;
+  static const double size120 = 120.0;
+  static const double size140 = 140.0;
+  static const double size138 = 138.0;
+  static const double size145 = 145.0;
+  static const double size150 = 150.0;
+  static const double size160 = 160.0;
+  static const double size168 = 168.0;
+  static const double size170 = 170.0;
+  static const double size200 = 200.0;
+  static const double size250 = 250.0;
+  static const double size300 = 300.0;
+  static const double size310 = 310.0;
+  static const double size330 = 330.0;
+  static const double size335 = 335.0;
+  static const double size340 = 340.0;
+  static const double size345 = 345.0;
+  static const double size350 = 350.0;
+  static const double size360 = 360.0;
+  static const double size370 = 370.0;
+  static const double size400 = 400.0;
+}
