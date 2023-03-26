@@ -1,10 +1,10 @@
 // ignore_for_file: sized_box_for_whitespace, avoid_unnecessary_containers, must_be_immutable, deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
 
+import '../app/color_manager.dart';
 import '../app/values_manager.dart';
+import '../components/components.dart';
 
 class MainViewContainer extends StatelessWidget {
   MainViewContainer({

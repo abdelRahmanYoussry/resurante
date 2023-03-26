@@ -1,4 +1,4 @@
-import 'package:hassy/Features/startup/domain/entities/onboarding.dart';
+import '../../domain/entities/onboarding.dart';
 
 class OnBoardingModel extends OnBoarding {
   const OnBoardingModel({

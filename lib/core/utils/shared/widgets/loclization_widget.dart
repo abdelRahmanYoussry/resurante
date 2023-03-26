@@ -4,15 +4,15 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:hassy/Features/startup/domain/use_cases/change_language_use_case.dart';
-import 'package:hassy/Features/startup/presentation/manager/startup_cubit.dart';
-import 'package:hassy/Features/startup/presentation/manager/startup_state.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
-import 'package:hassy/core/utils/shared/app/font_manager.dart';
-import 'package:hassy/core/utils/shared/app/styles_manager.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
 
+import '../../../../Features/startup/domain/use_cases/change_language_use_case.dart';
+import '../../../../Features/startup/presentation/manager/startup_cubit.dart';
+import '../../../../Features/startup/presentation/manager/startup_state.dart';
+import '../app/color_manager.dart';
+import '../app/font_manager.dart';
+import '../app/styles_manager.dart';
 import '../app/values_manager.dart';
+import '../components/components.dart';
 
 class LoclizationWidget extends StatelessWidget {
   LoclizationWidget({Key? key, required BuildContext context})

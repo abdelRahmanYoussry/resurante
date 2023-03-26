@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/widgets/textButton.dart';
+import 'package:resturente/core/utils/shared/widgets/textButton.dart';
 
 import '../app/color_manager.dart';
 import '../app/values_manager.dart';

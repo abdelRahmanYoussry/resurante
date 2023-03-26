@@ -1,6 +1,6 @@
-import 'package:hassy/Features/teacher/domain/entities/add_place_entity.dart';
 
 import '../../../../core/utils/network/base_broken_rules_entity.dart';
+import '../../domain/entities/add_place_entity.dart';
 
 class AddPlaceModel extends AddPlaceEntity {
   AddPlaceModel({

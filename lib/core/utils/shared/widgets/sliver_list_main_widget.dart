@@ -1,10 +1,10 @@
 // ignore_for_file: must_be_immutable, prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
 
 import '../../../../core/utils/shared/app/color_manager.dart';
 import '../../../../core/utils/shared/app/values_manager.dart';
+import '../components/components.dart';
 
 class SliverListMainWidget extends StatelessWidget {
   SliverListMainWidget({Key? key, required this.mainList}) : super(key: key);

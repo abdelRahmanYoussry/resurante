@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:hassy/Features/home/presentation/manager/home_cubit.dart';
 
+import '../../../../Features/home/presentation/manager/home_cubit.dart';
 import '../app/color_manager.dart';
 import '../app/font_manager.dart';
 import '../app/styles_manager.dart';

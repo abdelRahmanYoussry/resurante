@@ -10,6 +10,7 @@ import '../../../../../../core/utils/shared/app/color_manager.dart';
 import '../../../../../../core/utils/shared/components/components.dart';
 import '../../../../../../core/utils/shared/translations/locale_keys.g.dart';
 import '../../../../../../core/utils/shared/widgets/custom_app_bar.dart';
+import '../../../manager/TeacherProfile/teacher_profile_cubit.dart';
 
 class TeacherCommonQuestionScreen extends StatelessWidget {
   TeacherCommonQuestionScreen({Key? key}) : super(key: key);

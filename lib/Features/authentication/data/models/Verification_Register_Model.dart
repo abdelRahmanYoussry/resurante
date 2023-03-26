@@ -1,8 +1,7 @@
 // ignore_for_file: file_names
 
-import 'package:hassy/Features/authentication/domain/entities/verification_register_entity.dart';
-
 import '../../../../core/utils/network/base_broken_rules_entity.dart';
+import '../../domain/entities/verification_register_entity.dart';
 
 class VerificationRegisterModel extends VerificationRegisterEntity {
   VerificationRegisterModel(

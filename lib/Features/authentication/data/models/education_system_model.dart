@@ -1,6 +1,5 @@
-import 'package:hassy/Features/authentication/domain/entities/education_systems_entitiy.dart';
-
 import '../../../../core/utils/network/base_broken_rules_entity.dart';
+import '../../domain/entities/education_systems_entitiy.dart';
 
 class EducationSystemModel extends EducationSystemsEntity {
   EducationSystemModel(
@@ -27,5 +26,4 @@ class EducationSystemModel extends EducationSystemsEntity {
         );
   }
 //
-
 }

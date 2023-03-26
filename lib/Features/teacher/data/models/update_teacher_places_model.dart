@@ -1,6 +1,6 @@
-import 'package:hassy/Features/teacher/domain/entities/update_teacher_place_entity.dart';
 
 import '../../../../core/utils/network/base_broken_rules_entity.dart';
+import '../../domain/entities/update_teacher_place_entity.dart';
 
 class UpdateTeacherPlacesModel extends UpdateTeacherPlacesEntity {
   UpdateTeacherPlacesModel({

@@ -1,4 +1,8 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+
+import '../shared/app_routes/routes_manager.dart';
+import '../shared/components/components.dart';
 
 class ServerException extends Equatable implements Exception {
   final String? message;

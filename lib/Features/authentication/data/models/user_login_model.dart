@@ -1,5 +1,4 @@
-import 'package:hassy/core/utils/network/base_broken_rules_entity.dart';
-
+import '../../../../core/utils/network/base_broken_rules_entity.dart';
 import '../../domain/entities/user_login_entity.dart';
 
 class UserLoginModel extends UserLoginEntity {
@@ -26,17 +25,5 @@ class UserLoginModel extends UserLoginEntity {
       password: json['password'].toString(),
       data: json['data'].toString(),
     );
-  }
-  Map<String, dynamic> toMap() {
-    return {
-      'data': data,
-      'succeeded': succeeded,
-      'isErrorMessageJson': isErrorMessageJson,
-      'message': message,
-      'brokenRules': brokenRules,
-      'statusCode': statusCode,
-      'userName': userName,
-      'password': password
-    };
   }
 }

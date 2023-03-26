@@ -2,11 +2,11 @@
 // ignore_for_file: must_be_immutable, file_names, duplicate_ignore
 
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
-import 'package:hassy/core/utils/shared/app/font_manager.dart';
-import 'package:hassy/core/utils/shared/app/values_manager.dart';
 
+import '../app/color_manager.dart';
+import '../app/font_manager.dart';
 import '../app/styles_manager.dart';
+import '../app/values_manager.dart';
 
 class MyTextButton extends StatelessWidget {
   MyTextButton(

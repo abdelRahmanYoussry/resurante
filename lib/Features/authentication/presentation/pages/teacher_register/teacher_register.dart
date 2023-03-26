@@ -9,6 +9,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hassy/Features/authentication/presentation/manager/auth_cubit.dart';
 import 'package:hassy/Features/authentication/presentation/manager/auth_state.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
+import 'package:resturente/Features/authentication/presentation/manager/auth_cubit.dart';
 
 import '../../../../../core/utils/shared/app/color_manager.dart';
 import '../../../../../core/utils/shared/app/font_manager.dart';
@@ -24,6 +25,7 @@ import '../../../../../core/utils/shared/widgets/loclization_widget.dart';
 import '../../../../../core/utils/shared/widgets/main_view_container.dart';
 import '../../../../../core/utils/shared/widgets/my_custom_divider_size_10.dart';
 import '../../../../../core/utils/shared/widgets/textFormfield.dart';
+import '../../manager/auth_state.dart';
 
 class TeacherRegisterScreen extends StatelessWidget {
   TeacherRegisterScreen({Key? key}) : super(key: key);

@@ -3,8 +3,9 @@
 import 'package:dropdown_textfield/dropdown_textfield.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
-import 'package:hassy/core/utils/shared/app/values_manager.dart';
+
+import '../app/color_manager.dart';
+import '../app/values_manager.dart';
 
 class MyCustomDropDown extends StatelessWidget {
   List<DropDownValueModel> dropDownValueList;

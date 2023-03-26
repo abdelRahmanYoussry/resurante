@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 
 import 'package:equatable/equatable.dart';
-import 'package:hassy/core/utils/network/base_entity.dart';
 
 import '../../data/models/Verification_ForgetPassword_Model.dart';
 

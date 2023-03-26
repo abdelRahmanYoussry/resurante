@@ -1,6 +1,6 @@
 // ignore_for_file: unnecessary_string_escapes
 
-import 'package:hassy/core/utils/shared/chace_helper/cache_helper.dart';
+import '../chace_helper/cache_helper.dart';
 
 class AppStrings {
   static const String noRoute = "No Route Found";

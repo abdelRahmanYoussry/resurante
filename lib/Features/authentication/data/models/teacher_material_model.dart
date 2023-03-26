@@ -1,10 +1,8 @@
 // ignore_for_file: unused_import, unnecessary_null_in_if_null_operators
 
-import 'package:hassy/Features/authentication/domain/entities/get_material_entity.dart';
-import 'package:hassy/Features/authentication/domain/entities/uesr_data_entity.dart';
-
 import '../../../../core/utils/network/base_broken_rules_entity.dart';
 import '../../../../core/utils/network/base_data_entity.dart';
+import '../../domain/entities/get_material_entity.dart';
 
 class TeacherMaterialModel extends TeacherMaterialEntity {
   TeacherMaterialModel({

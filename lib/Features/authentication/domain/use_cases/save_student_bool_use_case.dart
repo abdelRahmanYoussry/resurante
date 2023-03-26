@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:hassy/Features/authentication/domain/repositories/BaseAuthRepository.dart';
 
 import '../../../../core/utils/error/failure.dart';
 import '../../../../core/utils/usecase/base_use_case.dart';
+import '../repositories/BaseAuthRepository.dart';
 
 class UpdateStudentBoolUseCase
     extends BaseUseCase<bool, UpdateStudentBoolParameters> {

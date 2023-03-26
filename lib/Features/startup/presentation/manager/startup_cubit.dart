@@ -2,13 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hassy/Features/startup/domain/use_cases/update_boarding_view_use_case.dart';
-import 'package:hassy/Features/startup/presentation/manager/startup_state.dart';
-import 'package:hassy/core/utils/shared/app/app_main_bool.dart';
-import 'package:hassy/core/utils/shared/app/assets_manager.dart';
-import 'package:hassy/core/utils/shared/app/strings_manager.dart';
-import 'package:hassy/core/utils/shared/translations/locale_keys.g.dart';
-import 'package:hassy/core/utils/usecase/base_use_case.dart';
+import 'package:resturente/Features/startup/presentation/manager/startup_state.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/utils/services/services_locator.dart';
@@ -17,6 +11,7 @@ import '../../domain/entities/onboarding.dart';
 import '../../domain/use_cases/change_language_use_case.dart';
 import '../../domain/use_cases/get_onboardingitems_usecase.dart';
 import '../../domain/use_cases/get_saved_lang_use_case.dart';
+import '../../domain/use_cases/update_boarding_view_use_case.dart';
 
 class OnBoardingCubit extends Cubit<OnBoardingStates> {
   final GetOnBoardingViewUseCase getOnBoardingViewUseCase;

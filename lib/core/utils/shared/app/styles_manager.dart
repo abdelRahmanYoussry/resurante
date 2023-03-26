@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/app/font_manager.dart';
+
+import 'font_manager.dart';
 
 TextStyle _getTextStyle(double fontSize, FontWeight fontWeight, Color color) {
   //

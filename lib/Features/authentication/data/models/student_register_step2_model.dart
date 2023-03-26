@@ -1,6 +1,5 @@
-import 'package:hassy/Features/authentication/domain/entities/student_register_step2_entity.dart';
-
 import '../../../../core/utils/network/base_broken_rules_entity.dart';
+import '../../domain/entities/student_register_step2_entity.dart';
 
 class StudentRegisterStep2Model extends StudentRegisterStep2Entity {
   StudentRegisterStep2Model(

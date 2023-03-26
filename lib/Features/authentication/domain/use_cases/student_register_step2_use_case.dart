@@ -1,9 +1,9 @@
 import 'dart:core';
 
 import 'package:dartz/dartz.dart';
-import 'package:hassy/core/utils/usecase/base_use_case.dart';
 
 import '../../../../core/utils/error/failure.dart';
+import '../../../../core/utils/usecase/base_use_case.dart';
 import '../repositories/BaseAuthRepository.dart';
 
 class StudentRegisterStep2UseCase

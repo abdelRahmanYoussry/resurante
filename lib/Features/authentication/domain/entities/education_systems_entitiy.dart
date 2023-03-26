@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:hassy/core/utils/network/base_entity.dart';
 
 class EducationSystemsEntity extends BaseEntityResponse with EquatableMixin {
   EducationSystemsEntity(

@@ -1,9 +1,8 @@
 // ignore_for_file: unused_import, unnecessary_null_in_if_null_operators
 
-import 'package:hassy/Features/authentication/domain/entities/uesr_data_entity.dart';
-
 import '../../../../core/utils/network/base_broken_rules_entity.dart';
 import '../../../../core/utils/network/base_data_entity.dart';
+import '../../domain/entities/uesr_data_entity.dart';
 
 class UserDataModel extends UserDataEntity {
   UserDataModel({

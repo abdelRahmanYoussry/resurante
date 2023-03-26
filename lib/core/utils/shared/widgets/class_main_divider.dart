@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
+
+import '../app/color_manager.dart';
 
 class ClassesMainDivider extends StatelessWidget {
   const ClassesMainDivider({Key? key}) : super(key: key);

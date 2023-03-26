@@ -3,15 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hassy/Features/home/presentation/manager/home_cubit.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
+import 'package:resturente/Features/home/presentation/manager/home_cubit.dart';
+import 'package:resturente/core/utils/shared/app/color_manager.dart';
+import 'package:resturente/core/utils/shared/components/components.dart';
 
 import '../../../../../core/utils/shared/app/strings_manager.dart';
 import '../../../../../core/utils/shared/chace_helper/cache_helper.dart';
 import '../../../../student/presentation/pages/StudentPages/StudentHomeScreen/StudentsHomeScreen.dart';
 import '../../../../student/presentation/pages/StudentPages/StudentLayout/StudentLayoutScreen.dart';
-import '../../../../teacher/presentation/pages/TeacherPages/TeacherHome/TeacherDashBoard.dart';
 import '../../../../teacher/presentation/pages/TeacherPages/TeacherLayout/teacher_layout_screen.dart';
 import '../Finance/FinnanceScreen.dart';
 

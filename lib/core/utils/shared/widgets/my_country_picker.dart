@@ -3,8 +3,8 @@
 import 'package:country_pickers/country.dart';
 import 'package:country_pickers/utils/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:hassy/Features/home/presentation/manager/home_cubit.dart';
 
+import '../../../../Features/home/presentation/manager/home_cubit.dart';
 import '../../services/services_locator.dart';
 import '../app/font_manager.dart';
 import '../app/styles_manager.dart';

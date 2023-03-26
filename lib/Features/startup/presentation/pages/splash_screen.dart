@@ -12,6 +12,10 @@ import 'package:hassy/core/utils/shared/app/values_manager.dart';
 import 'package:hassy/core/utils/shared/app_routes/routes_manager.dart';
 import 'package:hassy/core/utils/shared/components/components.dart';
 
+import '../../../../core/utils/shared/app/constant_manager.dart';
+import '../../../../core/utils/shared/app_routes/routes_manager.dart';
+import '../../../../core/utils/shared/components/components.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 

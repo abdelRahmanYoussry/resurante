@@ -2,9 +2,10 @@
 
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:hassy/Features/startup/domain/repositories/base_onboarding_repository.dart';
-import 'package:hassy/core/utils/error/failure.dart';
-import 'package:hassy/core/utils/usecase/base_use_case.dart';
+
+import '../../../../core/utils/error/failure.dart';
+import '../../../../core/utils/usecase/base_use_case.dart';
+import '../repositories/base_onboarding_repository.dart';
 
 class UpdateOnBoardingViewUseCase
     extends BaseUseCase<bool, UpdateOnBoardingParameters> {

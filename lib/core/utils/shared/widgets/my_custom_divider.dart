@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
-import 'package:hassy/core/utils/shared/app/values_manager.dart';
+
+import '../app/color_manager.dart';
+import '../app/values_manager.dart';
 
 class MyCustomDivider extends StatelessWidget {
   const MyCustomDivider({Key? key}) : super(key: key);

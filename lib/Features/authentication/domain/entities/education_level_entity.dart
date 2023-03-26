@@ -1,4 +1,4 @@
-import 'package:hassy/core/utils/network/base_entity.dart';
+import '../../../../core/utils/network/base_entity.dart';
 
 class EducationLevelEntity extends BaseEntityResponse {
   EducationLevelEntity(
@@ -9,13 +9,13 @@ class EducationLevelEntity extends BaseEntityResponse {
       required super.brokenRules,
       required super.statusCode});
 
-  // @override
-  // List<Object?> get props => [
-  //       data,
-  //       succeeded,
-  //       message,
-  //       isErrorMessageJson,
-  //       brokenRules,
-  //       statusCode,
-  //     ];
+  @override
+  List<Object?> get props => [
+        data,
+        succeeded,
+        message,
+        isErrorMessageJson,
+        brokenRules,
+        statusCode,
+      ];
 }

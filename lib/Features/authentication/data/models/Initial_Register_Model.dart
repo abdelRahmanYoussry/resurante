@@ -1,7 +1,6 @@
 // ignore_for_file: file_names
 
-import 'package:hassy/core/utils/network/base_broken_rules_entity.dart';
-
+import '../../../../core/utils/network/base_broken_rules_entity.dart';
 import '../../domain/entities/Register_initial_entitiy.dart';
 
 class InitialRegisterModel extends InitialRegisterEntity {

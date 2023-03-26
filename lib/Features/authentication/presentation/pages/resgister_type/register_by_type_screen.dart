@@ -3,20 +3,20 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hassy/Features/authentication/presentation/manager/auth_cubit.dart';
-import 'package:hassy/Features/authentication/presentation/manager/auth_state.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
-import 'package:hassy/core/utils/shared/app/values_manager.dart';
-import 'package:hassy/core/utils/shared/app_routes/routes_manager.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
-import 'package:hassy/core/utils/shared/translations/locale_keys.g.dart';
-import 'package:hassy/core/utils/shared/widgets/my_custom_divider_size_10.dart';
 
+import '../../../../../core/utils/shared/app/color_manager.dart';
 import '../../../../../core/utils/shared/app/font_manager.dart';
 import '../../../../../core/utils/shared/app/strings_manager.dart';
+import '../../../../../core/utils/shared/app/values_manager.dart';
+import '../../../../../core/utils/shared/app_routes/routes_manager.dart';
 import '../../../../../core/utils/shared/chace_helper/cache_helper.dart';
+import '../../../../../core/utils/shared/components/components.dart';
+import '../../../../../core/utils/shared/translations/locale_keys.g.dart';
 import '../../../../../core/utils/shared/widgets/elevatedButton.dart';
 import '../../../../../core/utils/shared/widgets/loclization_widget.dart';
+import '../../../../../core/utils/shared/widgets/my_custom_divider_size_10.dart';
+import '../../manager/auth_cubit.dart';
+import '../../manager/auth_state.dart';
 
 class RegisterTypeScreen extends StatelessWidget {
   RegisterTypeScreen({Key? key}) : super(key: key);

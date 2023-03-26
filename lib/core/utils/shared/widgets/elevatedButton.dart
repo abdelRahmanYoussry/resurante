@@ -3,8 +3,9 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
+
+import '../app/color_manager.dart';
+import '../components/components.dart';
 
 class MyElevatedButton extends StatelessWidget {
   late double height;

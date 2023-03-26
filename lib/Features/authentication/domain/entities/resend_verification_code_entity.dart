@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-import 'package:hassy/core/utils/network/base_entity.dart';
 
 class ResendVerificationEntity extends BaseEntityResponse with EquatableMixin {
   ResendVerificationEntity(

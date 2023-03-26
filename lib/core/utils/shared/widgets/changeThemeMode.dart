@@ -4,8 +4,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hassy/Features/home/presentation/manager/home_cubit.dart';
-import 'package:hassy/core/utils/shared/translations/locale_keys.g.dart';
+
+import '../../../../Features/home/presentation/manager/home_cubit.dart';
+import '../translations/locale_keys.g.dart';
 
 class ChangeThemeMode extends StatelessWidget {
   const ChangeThemeMode({

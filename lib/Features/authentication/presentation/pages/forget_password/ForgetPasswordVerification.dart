@@ -6,20 +6,16 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:hassy/Features/authentication/presentation/manager/auth_cubit.dart';
-import 'package:hassy/Features/authentication/presentation/manager/auth_state.dart';
-import 'package:hassy/Features/authentication/presentation/pages/register_level_2/register_level_2_screen.dart';
-import 'package:hassy/Features/home/presentation/manager/home_cubit.dart';
-import 'package:hassy/core/utils/shared/app/constant_manager.dart';
-import 'package:hassy/core/utils/shared/app/styles_manager.dart';
-import 'package:hassy/core/utils/shared/app_routes/routes_manager.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
 import 'package:keyboard_dismisser/keyboard_dismisser.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../../../../core/utils/shared/app/color_manager.dart';
+import '../../../../../core/utils/shared/app/constant_manager.dart';
 import '../../../../../core/utils/shared/app/font_manager.dart';
+import '../../../../../core/utils/shared/app/styles_manager.dart';
 import '../../../../../core/utils/shared/app/values_manager.dart';
+import '../../../../../core/utils/shared/app_routes/routes_manager.dart';
+import '../../../../../core/utils/shared/components/components.dart';
 import '../../../../../core/utils/shared/components/oldComponents/dropDownMenu.dart';
 import '../../../../../core/utils/shared/translations/locale_keys.g.dart';
 import '../../../../../core/utils/shared/widgets/changeThemeMode.dart';
@@ -28,6 +24,8 @@ import '../../../../../core/utils/shared/widgets/loclization_widget.dart';
 import '../../../../../core/utils/shared/widgets/main_view_container.dart';
 import '../../../../../core/utils/shared/widgets/my_custom_divider_size_5.dart';
 import '../../../../../core/utils/shared/widgets/textButton.dart';
+import '../../manager/auth_cubit.dart';
+import '../../manager/auth_state.dart';
 
 class ForgetPasswordVerificationScreen extends StatelessWidget {
   ForgetPasswordVerificationScreen({Key? key}) : super(key: key);

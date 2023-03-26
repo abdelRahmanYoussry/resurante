@@ -1,6 +1,6 @@
-import 'package:hassy/Features/authentication/presentation/manager/auth_cubit.dart';
-import 'package:hassy/core/utils/shared/app_routes/routes_manager.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
+import '../../../../core/utils/shared/app_routes/routes_manager.dart';
+import '../../../../core/utils/shared/components/components.dart';
+import '../manager/auth_cubit.dart';
 
 Future<int> chooseRegisterTypeStep2(
     {required int registerType, required context}) async {

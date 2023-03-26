@@ -1,10 +1,10 @@
 // ignore_for_file: must_be_immutable, deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:hassy/core/utils/shared/app/values_manager.dart';
 
 import '../app/font_manager.dart';
 import '../app/styles_manager.dart';
+import '../app/values_manager.dart';
 
 class MySliverButton extends StatelessWidget {
   const MySliverButton(

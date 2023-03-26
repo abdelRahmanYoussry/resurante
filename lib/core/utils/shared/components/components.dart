@@ -2,7 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
+
+import '../app/color_manager.dart';
 
 // void navigateToRoute(context, {required String routeName}) {
 //   Navigator.pushNamed(context, routeName);

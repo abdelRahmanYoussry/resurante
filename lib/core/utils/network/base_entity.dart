@@ -1,4 +1,4 @@
-import 'package:hassy/core/utils/network/base_broken_rules_entity.dart';
+import 'base_broken_rules_entity.dart';
 
 class BaseEntityResponse {
   final dynamic data;

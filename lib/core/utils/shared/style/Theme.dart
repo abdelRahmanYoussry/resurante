@@ -4,8 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hassy/core/utils/shared/app/color_manager.dart';
 import 'package:hexcolor/hexcolor.dart';
+
+import '../app/color_manager.dart';
 
 ThemeData lightTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,

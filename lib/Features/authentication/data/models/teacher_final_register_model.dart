@@ -1,6 +1,5 @@
-import 'package:hassy/Features/authentication/domain/entities/teacher_fianl_register_entity.dart';
-
 import '../../../../core/utils/network/base_broken_rules_entity.dart';
+import '../../domain/entities/teacher_fianl_register_entity.dart';
 
 class TeacherFinalRegisterModel extends TeacherFinalRegisterEntity {
   TeacherFinalRegisterModel({

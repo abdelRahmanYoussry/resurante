@@ -2,15 +2,12 @@
 
 import 'package:dartz/dartz.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:hassy/Features/startup/data/data_sources/onboarding_local_data_source.dart';
-import 'package:hassy/Features/startup/data/models/onboarding_model.dart';
-import 'package:hassy/Features/startup/domain/repositories/base_onboarding_repository.dart';
-import 'package:hassy/Features/startup/domain/use_cases/change_language_use_case.dart';
-import 'package:hassy/Features/startup/domain/use_cases/update_boarding_view_use_case.dart';
-import 'package:hassy/core/utils/error/exceptions.dart';
-import 'package:hassy/core/utils/error/failure.dart';
 
+import '../../../../core/utils/error/exceptions.dart';
+import '../../../../core/utils/error/failure.dart';
 import '../../domain/entities/onboarding.dart';
+import '../../domain/repositories/base_onboarding_repository.dart';
+import '../data_sources/onboarding_local_data_source.dart';
 
 class OnBoardingRepository extends BaseOnBoardingRepository {
   final BaseOnBoardingLocalDataSource baseOnBoardingLocalDataSource;

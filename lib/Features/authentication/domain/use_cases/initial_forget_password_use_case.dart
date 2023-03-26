@@ -1,10 +1,10 @@
 // ignore_for_file: file_names
 
 import 'package:dartz/dartz.dart';
-import 'package:hassy/Features/authentication/domain/entities/initial_forget_password_entity.dart';
-import 'package:hassy/core/utils/error/failure.dart';
-import 'package:hassy/core/utils/usecase/base_use_case.dart';
 
+import '../../../../core/utils/error/failure.dart';
+import '../../../../core/utils/usecase/base_use_case.dart';
+import '../entities/initial_forget_password_entity.dart';
 import '../repositories/BaseAuthRepository.dart';
 
 class InitialForgetPasswordUseCase extends BaseUseCase<

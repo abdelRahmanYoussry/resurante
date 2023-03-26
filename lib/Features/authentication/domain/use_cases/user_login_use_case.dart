@@ -1,10 +1,10 @@
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:hassy/Features/authentication/domain/repositories/BaseAuthRepository.dart';
 
 import '../../../../core/utils/error/failure.dart';
 import '../../../../core/utils/usecase/base_use_case.dart';
 import '../entities/user_login_entity.dart';
+import '../repositories/BaseAuthRepository.dart';
 
 class UserLoginUseCase
     extends BaseUseCase<UserLoginEntity, UserLoginParameters> {

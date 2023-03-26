@@ -4,13 +4,6 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:hassy/Features/authentication/presentation/pages/login/login_screen.dart';
-import 'package:hassy/Features/startup/presentation/manager/startup_cubit.dart';
-import 'package:hassy/Features/startup/presentation/manager/startup_state.dart';
-import 'package:hassy/core/utils/shared/app/constant_manager.dart';
-import 'package:hassy/core/utils/shared/app_routes/routes_manager.dart';
-import 'package:hassy/core/utils/shared/components/components.dart';
-import 'package:hassy/core/utils/shared/translations/locale_keys.g.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../../core/utils/shared/app/color_manager.dart';
@@ -20,6 +13,8 @@ import '../../../../core/utils/shared/app/values_manager.dart';
 import '../../../../core/utils/shared/components/oldComponents/dropDownMenu.dart';
 import '../../../../core/utils/shared/widgets/elevatedButton.dart';
 import '../../../../core/utils/shared/widgets/loclization_widget.dart';
+import '../manager/startup_cubit.dart';
+import '../manager/startup_state.dart';
 import '../widgets/onboarding_widget.dart';
 
 class OnBoardingScreen extends StatelessWidget {

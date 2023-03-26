@@ -1,10 +1,10 @@
 // ignore_for_file: avoid_print
 
-import 'package:hassy/Features/startup/domain/use_cases/update_boarding_view_use_case.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../core/utils/shared/app/strings_manager.dart';
 import '../../domain/use_cases/change_language_use_case.dart';
+import '../../domain/use_cases/update_boarding_view_use_case.dart';
 
 abstract class BaseOnBoardingLocalDataSource {
   Future<bool> getLastOnBoarding();
