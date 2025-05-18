@@ -1,13 +1,12 @@
-// ignore_for_file: sized_box_for_whitespace, avoid_unnecessary_containers, must_be_immutable, deprecated_member_use
-
 import 'package:flutter/material.dart';
+
 
 import '../app/color_manager.dart';
 import '../app/values_manager.dart';
 import '../components/components.dart';
 
 class MainViewContainer extends StatelessWidget {
-  MainViewContainer({
+  const MainViewContainer({
     Key? key,
     required this.mainWidget,
     required this.appBarHeight,
@@ -16,15 +15,15 @@ class MainViewContainer extends StatelessWidget {
     this.titleWidget,
     required this.cardWidth,
   }) : super(key: key);
-  Widget mainWidget;
-  double appBarHeight;
-  double cardHeight;
-  double cardWidth;
-  double? position;
-  Widget? titleWidget;
+  final Widget mainWidget;
+  final double appBarHeight;
+  final double cardHeight;
+  final double cardWidth;
+  final double? position;
+  final Widget? titleWidget;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: myMediaQuery(context: context).height,
       child: Stack(
         alignment: Alignment.bottomCenter,
@@ -58,17 +57,12 @@ class MainViewContainer extends StatelessWidget {
               child: Card(
                 elevation: 10,
                 borderOnForeground: true,
-                shadowColor: Theme.of(context).textTheme.bodyText1!.color!,
+                shadowColor: Theme.of(context).textTheme.headlineMedium!.color!,
                 semanticContainer: true,
-                color: Theme.of(context).backgroundColor,
+                color: Theme.of(context).scaffoldBackgroundColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(AppSize.size30),
                 ),
-                // margin: const EdgeInsets.only(
-                //   left: AppMargin.margin15,
-                //   right: AppMargin.margin15,
-                //   top: AppMargin.margin100,
-                // ),
                 child: Padding(
                   padding: const EdgeInsets.only(
                     top: AppPadding.padding10,

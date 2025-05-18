@@ -1,53 +1,7 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../Features/authentication/presentation/pages/forget_password/ForgetPasswordVerification.dart';
-import '../../../../Features/authentication/presentation/pages/forget_password/forgetPassword.dart';
-import '../../../../Features/authentication/presentation/pages/forget_password/initial_forget_password_screen.dart';
-import '../../../../Features/authentication/presentation/pages/login/login_screen.dart';
-import '../../../../Features/authentication/presentation/pages/register_level_1/register_level_1_screen.dart';
-import '../../../../Features/authentication/presentation/pages/register_level_2/register_level_2_screen.dart';
-import '../../../../Features/authentication/presentation/pages/register_verification/RegisterVerification.dart';
-import '../../../../Features/authentication/presentation/pages/resgister_type/register_by_type_screen.dart';
-import '../../../../Features/authentication/presentation/pages/student_register/student_register.dart';
-import '../../../../Features/authentication/presentation/pages/teacher_register/teacher_register.dart';
-import '../../../../Features/home/presentation/pages/Mainlayout/MainLayoutScreen.dart';
-import '../../../../Features/home/presentation/widgets/test_screen.dart';
-import '../../../../Features/startup/presentation/pages/onboarding_screen.dart';
-import '../../../../Features/startup/presentation/pages/splash_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentPages/StudentAddClass/SudentAddClass.dart';
-import '../../../../Features/student/presentation/pages/StudentPages/StudentCompeleteReserve/student_compelete_reserve_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentPages/StudentLayout/StudentLayoutScreen.dart';
-import '../../../../Features/student/presentation/pages/StudentPages/StudentMainScreen/student_main_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentPages/StudentPayment/StudentAddCardScreen.dart';
-import '../../../../Features/student/presentation/pages/StudentPages/StudentPayment/StudentClassCodeScreen.dart';
-import '../../../../Features/student/presentation/pages/StudentPages/StudentPayment/StudentPaymentScreen.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/editProfile/student_editProfile_layout/student_profile_layout.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/my_Teachers/my_teaches_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/student_common_questions/student_common_question_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/student_help and complaints/Student_help_and_complaints_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/student_places/Student_class_places_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/student_privacy_policy/student_privacy_policy_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/student_profile_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/student_settings/student_setting_screen.dart';
-import '../../../../Features/student/presentation/pages/StudentProfile/student_usage_policy/student_usage_policy_screen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherPages/TeacherClassManagement/StudentPayCashScreen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherPages/TeacherClassManagement/StudentPayVisaScreen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherPages/TeacherClassManagement/TeacherClassManagementScreen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherPages/TeacherLayout/teacher_layout_screen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherPages/Teacheraddclass/teacher_add_class_screen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherProfile/my_student_screen/my_student_screen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherProfile/teacher_add_new_document/add_new_decoument_screen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherProfile/teacher_common_question/teacher_common_question_screen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherProfile/teacher_contact_with_parent/contact_with_parent_screen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherProfile/teacher_edit_profile/teacher_profile_layout.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherProfile/teacher_help_and_complaints/help_and_complaints_screen.dart';
-import '../../../../Features/teacher/presentation/pages/TeacherProfile/teacher_privacy_policy/teacher_privacy_policy_screen.dart';
-import '../animation/animation_routes.dart';
 import '../app/color_manager.dart';
-import '../app/font_manager.dart';
 import '../app/styles_manager.dart';
 import '../app/values_manager.dart';
 import '../translations/locale_keys.g.dart';
@@ -61,51 +15,82 @@ class Routes {
   static const String registerStep1Route = 'registerStep1';
   static const String registerStep2Route = 'registerStep2';
   static const String teacherRegisterRoute = 'registerTeacher';
-  static const String verificationRoute = 'verification';
   static const String registerTypesRoute = 'registerType';
   static const String studentRegisterRoute = 'registerStudent';
+  static const String forgetPasswordScreen = 'forgetPasswordScreen';
   static const String testRoute = 'test';
-  static const String mainLayout = 'mainLayout';
+  // static const String mainLayout = 'mainLayout';
   static const String teacherAddLessonRoute = 'teacherAddLesson';
   static const String studentAddLessonRoute = 'studentAddNewClass';
   static const String teacherClassesLayoutRoute = 'teacherLayoutRoute';
   static const String studentClassesLayoutRoute = 'studentLayoutRoute';
   static const String studentMainScreenRoute = 'studentMainScreenRoute';
   static const String studentSettingRoute = 'studentSettingRoute';
+  static const String teacherUpdatePlaceScreen = 'teacherUpdatePlaceScreen';
+  static const String successFinishClassScreen = 'successFinishClassScreen';
+  static const String teacherUpdateClassScreen = 'teacherUpdateClassScreen';
+  static const String teacherParentMessageRepliesScreen =
+      'teacherParentMessageRepliesScreen';
+
   static const String teacherMainScreenRoute = 'teacherMainScreenRoute';
   static const String teacherSettingRoute = 'teacherSettingRoute';
   static const String teacherAddNewDocumentRoute = 'teacherAddNewDocumentRoute';
   static const String teacherMyStudentRoute = 'teacherMyStudentRoute';
-  static const String studentMyTeachersRoute = 'studentMyTeachersRoute';
   static const String teacherContactParentRoute = 'teacherContactParentRoute';
   static const String teacherAddLocationRoute = 'teacherAddLocationRoute';
   static const String teacherMainPlacesRoute = 'teacherMainPlacesRoute';
   static const String studentMyPlaces = 'studentMyPlaces';
   static const String studentProfileRoute = 'studentProfileRoute';
   static const String teacherProfileRoute = 'teacherProfileRoute';
-  static const String teacherHelpAndComplaintsRoute =
-      'TeacherHelpAndComplaintsRoute';
-  static const String studentHelpAndComplaintsRoute =
+  static const String userHelpAndComplaintsRoute =
       'StudentHelpAndComplaintsRoute';
   static const String classReserveDetailsRoute = 'classReserveDetailsRoute';
   static const String studentPaymentRoute = 'studentPaymentRoute';
   static const String studentAddCardRoute = 'studentAddCardRoute';
   static const String studentClassCodeRoute = 'studentClassCodeRoute';
-  static const String teacherPrivacyPolicyRoute = 'teacherPrivacyPolicyRoute';
-  static const String studentPrivacyPolicyRoute = 'studentPrivacyPolicyRoute';
-  static const String teacherUsagePolicyRoute = 'teacherUsagePolicyRoute';
-  static const String studentUsagePolicyRoute = 'studentUsagePolicyRoute';
-  static const String teacherCommonQuestionRoute = 'teacherCommonQuestionRoute';
-  static const String studentCommonQuestionRoute = 'studentCommonQuestionRoute';
+  static const String userPrivacyPolicyRoute = 'studentPrivacyPolicyRoute';
+  static const String userUsagePolicyRoute = 'studentUsagePolicyRoute';
+  static const String userCommonQuestionRoute = 'studentCommonQuestionRoute';
   static const String teacherManagementClassRoute =
       'teacherManagementClassRoute';
   static const String studentPayCashRoute = 'studentPayCashRoute';
+  static const String searchWidget = 'SearchWidget';
+  static const String lessonDetails = 'lessonDetails';
   static const String studentPayVisaRoute = 'studentPayVisaRoute';
   static const String teacherProfileMainLayOut = 'teacherProfileMainLayOut';
   static const String studentProfileMainLayOut = 'studentProfileMainLayOut';
   static const String initialForgetPassword = 'initialForgetPassword';
-  static const String forgetPasswordVerification = 'forgetPasswordVerification';
+  // static const String forgetPasswordVerification = 'forgetPasswordVerification';
   static const String forgetPassword = 'forgetPassword';
+  static const String studentReviewScreen = 'studentReviewScreen';
+  static const String teacherMoreClassesAvalibleScreen =
+      'teacherMoreClassesAvalibleScreen';
+  static const String teacherMostReservedScreen = 'teacherMostReservedScreen';
+  static const String registerVerificationScreen = 'registerVerificationScreen';
+  static const String updateClassRoute = 'updateClassRoute';
+  static const String activeScreen = 'activeScreen';
+  static const String activeScreenStepOne = 'activeScreenStepOne';
+  static const String activeScreenStepTwo = 'activeScreenStepTwo';
+  static const String finishActive = 'finishActive';
+  static const String successActive = 'successActive';
+  static const String mapScreen = 'mapScreen';
+  static const String sessionSuccessPaymentScreen =
+      'SessionSuccessPaymentScreen';
+  static const String getParentMessageRepliesScreen =
+      'getParentMessageRepliesScreen';
+  static const String teacherClassManagementScreen =
+      'teacherClassManagementScreen';
+  static const String addBalanceScreen = 'addBalanceScreen';
+  static const String studentDeleteCreditCardScreen =
+      'studentDeleteCreditCardScreen';
+  static const String creditCardUiScreen = 'creditCardUiScreen';
+  static const String creditCardMainScreen = 'creditCardMainScreen';
+  static const String notificationScreen = 'notificationScreen';
+  static const String notificationDetailsScreen = 'notificationDetailsScreen';
+  static const String completeRegisterStepsScreen =
+      'completeRegisterStepsScreen';
+  static const String sessionCancelReservationScreen =
+      'sessionCancelReservationScreen';
 }
 
 /// this is main class to generate route dynamic in all app screens
@@ -113,108 +98,332 @@ class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.splashRoute:
-        return SlideRight(page: const SplashScreen());
-      case Routes.onBoardingRoute:
-        return SlideRight(page: OnBoardingScreen());
-      case Routes.loginRoute:
-        return MaterialPageRoute(
-          builder: (context) => LoginScreen(),
-        );
-      case Routes.registerStep1Route:
-        return SlideRight(page: RegisterBeforeLoginScreen());
-      case Routes.registerStep2Route:
-        return SlideRight(page: RegisterStepTwoScreen());
-      case Routes.studentProfileMainLayOut:
-        return SlideRight(page: StudentEditProfileLayout());
-      case Routes.studentMyTeachersRoute:
-        return SlideRight(page: MyTeachersScreen());
-      case Routes.studentCommonQuestionRoute:
-        return SlideRight(page: StudentCommonQuestionScreen());
-      case Routes.studentHelpAndComplaintsRoute:
-        return SlideRight(page: StudentHelpAndComplaintsScreen());
-      case Routes.studentMyPlaces:
-        return SlideRight(page: StudentPlacesScreen());
-      case Routes.studentPrivacyPolicyRoute:
-        return SlideRight(page: StudentPrivacyPolicyScreen());
-      case Routes.studentUsagePolicyRoute:
-        return SlideRight(page: StudentUsagePolicyScreen());
-      case Routes.verificationRoute:
-        return SlideRight(
-            page: RegisterVerificationScreen(
-          phoneNumber: '',
-          countryCode: '20',
-        ));
-      case Routes.teacherRegisterRoute:
-        return SlideRight(page: TeacherRegisterScreen());
-      case Routes.registerTypesRoute:
-        return SlideRight(page: RegisterTypeScreen());
-      case Routes.studentRegisterRoute:
-        return SlideRight(page: StudentRegisterScreen());
-      case Routes.testRoute:
-        return SlideRight(page: TestScreen());
-      case Routes.mainLayout:
-        return SlideRight(page: MainLayout());
-      case Routes.teacherAddLessonRoute:
-        return SlideRight(page: TeacherAddClassesScreen());
-      case Routes.studentAddLessonRoute:
-        return SlideRight(page: StudentAddClassScreen());
-      case Routes.teacherClassesLayoutRoute:
-        return SlideRight(page: TeacherLayOutScreen());
-      case Routes.studentMainScreenRoute:
-        return SlideRight(page: StudentMainScreen());
-      case Routes.teacherMainScreenRoute:
-        return SlideRight(page: TeacherMainScreen());
-      case Routes.teacherSettingRoute:
-        return SlideRight(page: TeacherSettingScreen());
-      case Routes.teacherAddNewDocumentRoute:
-        return SlideRight(page: TeacherAddNewDocument());
-      case Routes.teacherMyStudentRoute:
-        return SlideRight(page: MyStudentScreen());
-      case Routes.teacherContactParentRoute:
-        return SlideRight(page: ContactWithParentScreen());
-      case Routes.teacherAddLocationRoute:
-        return SlideRight(page: TeacherAddNewLocationScreen());
-      case Routes.studentClassesLayoutRoute:
-        return SlideRight(page: StudentLayOutScreen());
-      case Routes.studentSettingRoute:
-        return SlideRight(page: StudentSettingScreen());
-      // return MaterialPageRoute(builder: (_) => StudentSettingScreen());
-      case Routes.studentProfileRoute:
-        return SlideRight(page: StudentProfileScreen());
-      case Routes.teacherProfileRoute:
-        return SlideRight(page: TeacherProfileScreen());
-      case Routes.teacherHelpAndComplaintsRoute:
-        return SlideRight(page: HelpAndComplaintsScreen());
-      case Routes.classReserveDetailsRoute:
-        return SlideRight(page: ClassesReserveDetailsScreen());
-      case Routes.studentPaymentRoute:
-        return SlideRight(page: StudentPaymentScreen());
-      case Routes.studentAddCardRoute:
-        return SlideRight(page: StudentAddCardScreen());
-      case Routes.studentClassCodeRoute:
-        return SlideRight(page: StudentClassCodeScreen());
-      case Routes.teacherPrivacyPolicyRoute:
-        return SlideRight(page: TeacherPrivacyPolicyScreen());
-      case Routes.teacherUsagePolicyRoute:
-        return SlideRight(page: TeacherUsagePolicyScreen());
-      case Routes.teacherCommonQuestionRoute:
-        return SlideRight(page: TeacherCommonQuestionScreen());
-      case Routes.teacherManagementClassRoute:
-        return SlideRight(page: TeacherClassManagementScreen());
-      case Routes.studentPayCashRoute:
-        return SlideRight(page: StudentPayCashScreen());
-      case Routes.studentPayVisaRoute:
-        return SlideRight(page: StudentPayVisaScreen());
-      case Routes.teacherProfileMainLayOut:
-        return SlideRight(page: TeacherProfileMainLayout());
-      case Routes.initialForgetPassword:
-        return SlideRight(page: InitialForgetPasswordScreen());
-      case Routes.forgetPasswordVerification:
-        return SlideRight(page: ForgetPasswordVerificationScreen());
-      case Routes.forgetPassword:
-        return SlideRight(page: ForgetPasswordScreen());
-      case Routes.teacherMainPlacesRoute:
-        return SlideRight(page: MainPlacesScreen());
+      // return MaterialPageRoute(
+      //     builder: (context) => BlocProvider(
+      //           create: (context) => serviceLocator<AuthenticationCubit>(),
+      //           child: const SplashScreen(),
+      //         ),);
+      // case Routes.teacherContactParentRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => ContactWithParentScreen());
+      // case Routes.successFinishClassScreen:
+      //   final args = settings.arguments as SuccessFinishClassArgs;
+      //   return MaterialPageRoute(
+      //     builder: (context) => SuccessFinishClassWidget(
+      //       lessonId: args.lessonId,
+      //     ),
+      //   );
+      // case Routes.getParentMessageRepliesScreen:
+      //   final args = settings.arguments as GetTeacherParentMessageRepliesArgs;
+      //   return MaterialPageRoute(
+      //     builder: (context) => GetParentMessageRepliesScreen(
+      //       messageId: args.messageId,
+      //     ),
+      //   );
+      // case Routes.forgetPasswordScreen:
+      //   final args = settings.arguments as ForgetPasswordArgs;
+      //   return MaterialPageRoute(
+      //     builder: (context) => ForgetPasswordScreen(
+      //       userId: args.userId,
+      //     ),
+      //   );
+      // case Routes.completeRegisterStepsScreen:
+      //   final args = settings.arguments as CompleteRegisterArgs;
+      //   return MaterialPageRoute(
+      //     builder: (context) => CompleteRegisterStepsScreen(
+      //       title: args.title,
+      //       image: args.image,
+      //       isForgetPasswordComplete: args.isForgetPasswordComplete,
+      //       isStudent: args.isStudent,
+      //       subtitle: args.subtitle,
+      //     ),
+      //   );
+      // case Routes.studentReviewScreen:
+      //   final args = settings.arguments as SaveLessonReviewArgs;
+      //   return MaterialPageRoute(
+      //     builder: (context) => StudentReviewScreen(
+      //       classDetails: args.classStudentData,
+      //     ),
+      //   );
+      // case Routes.registerVerificationScreen:
+      //   final args = settings.arguments as RegisterVerificationArgs;
+      //   return MaterialPageRoute(
+      //     builder: (context) => RegisterVerificationScreen(
+      //       image: args.image,
+      //       phoneNumber: args.phoneNumber,
+      //       countryCode: args.countryCode,
+      //       isForgetPassword: args.isForgetPassword,
+      //       userId: args.userId,
+      //     ),
+      //   );
+      // case Routes.mapScreen:
+      //   final args = settings.arguments as Map<String, dynamic>;
+      //   return MaterialPageRoute(
+      //     builder: (context) => MapScreen(
+      //       lat: args['lat'],
+      //       lon: args['lon'],
+      //       myMarker: args['myMarker'],
+      //       myController: args['myController'],
+      //       isFloatingButtonShow: args['isFloatingButtonShow'],
+      //     ),
+      //   );
+      // case Routes.teacherUpdatePlaceScreen:
+      //   final args = settings.arguments as UpdateTeacherPlaceArgs;
+      //   return MaterialPageRoute(
+      //     builder: (context) => TeacherUpdatePlacesScreen(
+      //       data: args.locationData,
+      //     ),
+      //   );
+      // case Routes.teacherClassManagementScreen:
+      //   final args = settings.arguments as TeacherClassManagementArgs;
+      //
+      //   return MaterialPageRoute(
+      //     builder: (context) => TeacherClassManagementScreen(
+      //       lessonId: args.lessonId,
+      //     ),
+      //   );
+      // case Routes.teacherMoreClassesAvalibleScreen:
+      //   final args = settings.arguments as TeacherMoreAvalibleClassesArguments;
+      //   return MaterialPageRoute(
+      //     builder: (context) => BlocProvider(
+      //       create: (context) => serviceLocator<TeacherLessonCubit>()
+      //         ..getCurrentClasses(
+      //           teacherCurrentClassesParameters:
+      //               serviceLocator<TeacherCurrentLessonsParameters>(),
+      //         ),
+      //       child: TeacherMoreCurrentClassesScreen(
+      //         title: args.title,
+      //         listModel: args.listModel,
+      //         isHomeScreen: args.isHomeScreen,
+      //       ),
+      //     ),
+      //   );
+      // case Routes.teacherMostReservedScreen:
+      //   return MaterialPageRoute(
+      //     builder: (context) => BlocProvider(
+      //       create: (context) => serviceLocator<TeacherLessonCubit>()
+      //         ..getCurrentClasses(
+      //           teacherCurrentClassesParameters:
+      //               serviceLocator<TeacherCurrentLessonsParameters>(),
+      //         ),
+      //       child: const TeacherMoreClassesReservedScreen(),
+      //     ),
+      //   );
+      // case Routes.studentDeleteCreditCardScreen:
+      //   final args = settings.arguments as DeleteCreditCardArguments;
+      //   return MaterialPageRoute(
+      //     builder: (context) => StudentDeleteCardScreen(
+      //       backGroundImage: args.backGroundImage,
+      //       creditCardModel: args.creditCardModel,
+      //     ),
+      //   );
+      // case Routes.teacherUpdateClassScreen:
+      //   final args = settings.arguments as TeacherUpdateClassArgs;
+      //   return MaterialPageRoute(
+      //     builder: (context) => MultiBlocProvider(
+      //       providers: [
+      //         BlocProvider(
+      //           create: (context) =>
+      //               serviceLocator<FilterCubit>()..getLessonType(),
+      //         ),
+      //         BlocProvider(
+      //           create: (context) => serviceLocator<TeacherProfileNewCubit>()
+      //             ..getTeacherPlaces(),
+      //         ),
+      //         BlocProvider(
+      //           create: (context) => serviceLocator<TeacherLessonCubit>()
+      //             ..getEducationSystem()
+      //             ..getEducationLevel(
+      //               educationSystemId: args.myLesson.educationSystemId!,
+      //             )
+      //             ..getEducationGrade(
+      //               educationLevelId: args.myLesson.educationLevelId!,
+      //             ),
+      //         ),
+      //         BlocProvider(
+      //           create: (context) => serviceLocator<MaterialCubit>(),
+      //         ),
+      //       ],
+      //       child: TeacherUpdateClassesScreen(
+      //         myLesson: args.myLesson,
+      //       ),
+      //     ),
+      //   );
+      // case Routes.notificationScreen:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const NotificationScreen());
+      // case Routes.notificationDetailsScreen:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const NotificationDetailsScreen());
+      // case Routes.addBalanceScreen:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const StudentAddBalanceScreen());
+      // case Routes.onBoardingRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const OnBoardingScreen());
+      // case Routes.creditCardMainScreen:
+      //   return MaterialPageRoute(builder: (context) => CreditCardsScreen());
+      // case Routes.loginRoute:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const LoginScreen(),
+      //   );
+      // case Routes.creditCardUiScreen:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const StudentCreditCardUiScreen(),
+      //   );
+      // case Routes.registerStep1Route:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const InitialRegisterScreen());
+      // case Routes.registerStep2Route:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const RegisterStepTwoScreen());
+      // case Routes.studentProfileMainLayOut:
+      //   return MaterialPageRoute(
+      //       builder: (context) => BlocProvider(
+      //             create: (context) => serviceLocator<AuthenticationCubit>()
+      //               ..getStudentPersonalData(),
+      //             child: const StudentProfileMainLayout(),
+      //           ));
+      // case Routes.searchWidget:
+      //   return MaterialPageRoute(
+      //     builder: (context) => BlocProvider(
+      //       create: (context) => serviceLocator<SearchCubit>(),
+      //       child: SearchWidget(),
+      //     ),
+      //   );
+      // case Routes.lessonDetails:
+      //   return MaterialPageRoute(builder: (context) {
+      //     final args = settings.arguments as LessonDetailsArguments;
+      //     return LessonByIdScreen(
+      //       classStudentData: args.filterClassData,
+      //       lessonId: args.lessonId,
+      //       isTeacher: args.isTeacher,
+      //     );
+      //   });
+      // case Routes.userCommonQuestionRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => UserCommonQuestionScreen());
+      // case Routes.userHelpAndComplaintsRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => UserHelpAndComplaintsScreen());
+      // case Routes.userPrivacyPolicyRoute:
+      //   return MaterialPageRoute(
+      //     builder: (context) => UserPrivacyPolicyScreen(),
+      //   );
+      // case Routes.userUsagePolicyRoute:
+      //   return MaterialPageRoute(
+      //     builder: (context) => UserUsagePolicyScreen(),
+      //   );
+      // // case Routes.verificationRoute:
+      // //   return MaterialPageRoute(
+      // //     builder: (context) => const RegisterVerificationScreen(
+      // //       phoneNumber: '',
+      // //       countryCode: '20',
+      // //       image: ImageAssets.verificationImage,
+      // //       isForgetPassword: false,
+      // //       userId: '',
+      // //     ),
+      // //   );
+      // case Routes.teacherRegisterRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const TeacherRegisterScreen());
+      // case Routes.registerTypesRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const RegisterTypeScreen());
+      // case Routes.studentRegisterRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const StudentRegisterScreen());
+      // case Routes.testRoute:
+      //   return MaterialPageRoute(builder: (context) => const Scaffold());
+      // case Routes.teacherAddLessonRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => TeacherAddClassesScreen());
+      // case Routes.activeScreen:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const MainActivationScreen());
+      // case Routes.sessionSuccessPaymentScreen:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const SessionSuccessPaymentScreen(),
+      //   );
+      // case Routes.sessionCancelReservationScreen:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const SessionSuccessCancelReservationScreen(),
+      //   );
+      // case Routes.activeScreenStepOne:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const ActiveAccountStepOne(
+      //         // idsList: args.idsList,
+      //         // certificateList: args.certificateList,
+      //         ),
+      //   );
+      // case Routes.activeScreenStepTwo:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const ActiveAccountStepTwo(
+      //         // certificateList: args.certificateList,
+      //         ),
+      //   );
+      // case Routes.teacherClassesLayoutRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const TeacherHomeScreen());
+      // case Routes.studentMainScreenRoute:
+      //   int? args = settings.arguments as int?;
+      //   return MaterialPageRoute(
+      //     builder: (context) => StudentMainScreen(
+      //       pageIndex: args ?? 0,
+      //     ),
+      //   );
+      // case Routes.teacherMainScreenRoute:
+      //   return MaterialPageRoute(
+      //     builder: (context) => TeacherMainScreen(),
+      //   );
+      // case Routes.teacherSettingRoute:
+      //   return MaterialPageRoute(
+      //     builder: (context) => BlocProvider(
+      //       create: (context) => serviceLocator<AuthenticationCubit>(),
+      //       child: TeacherSettingScreen(),
+      //     ),
+      //   );
+      // case Routes.teacherAddLocationRoute:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const TeacherAddNewLocationScreen(),
+      //   );
+      // case Routes.studentClassesLayoutRoute:
+      //   return MaterialPageRoute(
+      //     builder: (context) => const StudentTableScreen(),
+      //   );
+      // case Routes.studentSettingRoute:
+      //   return MaterialPageRoute(
+      //     builder: (context) => BlocProvider(
+      //       create: (context) => serviceLocator<AuthenticationCubit>(),
+      //       child: const StudentSettingScreen(),
+      //     ),
+      //   );
+      // case Routes.studentProfileRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const StudentProfileScreen());
+      // case Routes.teacherProfileRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const TeacherProfileScreen());
+      // case Routes.finishActive:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const ActiveAccountRevisionScreen());
+      // case Routes.successActive:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const ActiveAccountSuccessScreen());
+      // case Routes.studentAddCardRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const StudentAddCardScreen());
+      // case Routes.studentPayCashRoute:
+      //   return MaterialPageRoute(builder: (context) => StudentPayCashScreen());
+      // case Routes.teacherProfileMainLayOut:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const TeacherProfileMainLayout());
+      // case Routes.initialForgetPassword:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const InitialForgetPasswordScreen());
+      // case Routes.teacherMainPlacesRoute:
+      //   return MaterialPageRoute(
+      //       builder: (context) => const MainPlacesScreen());
       default:
         return unDefinedRoute();
     }
@@ -236,10 +445,10 @@ class RouteGenerator {
         body: Center(
           child: Text(
             LocaleKeys.noRoute.tr(),
-            style: getBoldStyle(
-              color: ColorManager.white,
-              fontSize: FontSize.size18,
-            ),
+            style: getBoldBlack24Style(
+                // color: ColorManager.white,
+                // fontSize: FontSize.size18,
+                ),
           ),
         ),
       ),

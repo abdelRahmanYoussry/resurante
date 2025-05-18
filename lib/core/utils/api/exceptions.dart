@@ -1,9 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 
-import '../shared/app_routes/routes_manager.dart';
-import '../shared/components/components.dart';
-
 class ServerException extends Equatable implements Exception {
   final String? message;
   final Function? errorFunction;
@@ -28,7 +25,7 @@ class BadRequestException extends ServerException {
 
 class UnauthorizedException extends ServerException {
   void navigateToLogin({required BuildContext context}) {
-    navigateAndFinish(context, routeName: Routes.loginRoute);
+    // navigateAndFinish(context, routeName: Routes.loginRoute);
   }
 
   const UnauthorizedException([message, function])
@@ -54,3 +51,6 @@ class NoInternetConnectionException extends ServerException {
 }
 
 class CacheException implements Exception {}
+
+// String getServerError() => LocaleKeys.unExpectedError.tr();
+String getServerError() => "LocaleKeys.unExpectedError.tr()";

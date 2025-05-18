@@ -1,11 +1,9 @@
-// ignore_for_file: file_names, must_be_immutable, deprecated_member_use
-
 import 'package:flutter/material.dart';
-
-import '../../../../Features/home/presentation/manager/home_cubit.dart';
-import '../app/color_manager.dart';
-import '../app/font_manager.dart';
-import '../app/values_manager.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:resturente/core/utils/shared/app/color_manager.dart';
+import 'package:resturente/core/utils/shared/app/font_manager.dart';
+import 'package:resturente/core/utils/shared/app/styles_manager.dart';
 
 class MyTextFormField extends StatelessWidget {
   late bool readOnly = false;
@@ -14,18 +12,18 @@ class MyTextFormField extends StatelessWidget {
   late dynamic validator;
   Function? onSubmit;
   Function? onChanged;
+  double? contentPadding;
   Function()? onTap;
   late bool isPassword = false;
   bool? isEnabled = false;
+  bool? alignLabelWithHint = true;
   String? label;
   String? hint;
   Widget? prefix;
   IconData? suffix;
+  String? svgImage;
   Function()? suffixClicked;
-  TextStyle? hintStyle = TextStyle(
-    color: ColorManager.textFormBorderColor,
-    fontSize: FontSize.size12,
-  );
+  TextStyle? hintStyle = getRegularGray14Style();
   Color borderColor = Colors.grey;
   Color labelColor = ColorManager.mainPrimaryColor3;
   Color textColor = Colors.white;
@@ -34,29 +32,39 @@ class MyTextFormField extends StatelessWidget {
   Color? suffixIconColor = ColorManager.mainPrimaryColor4;
   String? textInputFormat;
   AutovalidateMode? isAutoValid;
-  int maxText = 1;
+  TextAlign textAlign;
+  int? maxText;
 
-  MyTextFormField(
-      {Key? key,
-      required this.readOnly,
-      required this.control,
-      this.hint,
-      required this.type,
-      this.validator,
-      this.onSubmit,
-      this.onChanged,
-      this.onTap,
-      required this.isPassword,
-      this.isEnabled,
-      this.label,
-      this.prefix,
-      this.suffix,
-      this.maxText = 1,
-      this.suffixClicked,
-      this.textInputFormat,
-      this.hintStyle,
-      this.isAutoValid})
-      : super(key: key);
+  MyTextFormField({
+    super.key,
+    required this.readOnly,
+    required this.control,
+    this.hint,
+    required this.type,
+    this.validator,
+    this.onSubmit,
+    this.onChanged,
+    this.onTap,
+    required this.isPassword,
+    this.isEnabled,
+    this.label,
+    this.prefix,
+    this.suffix,
+    this.alignLabelWithHint,
+    this.maxText,
+    this.suffixClicked,
+    this.textAlign = TextAlign.start,
+    this.textInputFormat,
+    this.hintStyle,
+    this.svgImage,
+    this.contentPadding,
+    this.isAutoValid,
+  });
+  String getDeviceType() {
+    final data = MediaQueryData.fromView(WidgetsBinding.instance.window);
+    return data.size.shortestSide < 600 ? 'phone' : 'tablet';
+  }
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -65,79 +73,73 @@ class MyTextFormField extends StatelessWidget {
       ],
       readOnly: readOnly,
       autovalidateMode: isAutoValid,
-      maxLines: maxText,
+      // textAlignVertical: TextAlignVertical.center,
+      textAlign: textAlign,
+      // onTapOutside: (event) => FocusScope.of(context).unfocus(),
+      maxLines: maxText ?? 1,
       controller: control,
       keyboardType: type,
       validator: validator,
       onFieldSubmitted: (s) {
         onSubmit!(s);
       },
-      onTap: () {
-        onTap!();
-      },
+      onTap: onTap,
       obscureText: isPassword,
       enabled: isEnabled,
       onChanged: (value) {
         onChanged!(value);
       },
-      style: TextStyle(
-        //textColor
-        color: Theme.of(context).textTheme.bodyText1!.color,
-        fontSize: FontSize.size16,
-      ),
+      style: getDeviceType() == 'tablet'
+          ? getBoldBlack16Style()
+          : getBoldBlack14Style(),
       decoration: InputDecoration(
+        isDense: true,
+        contentPadding: EdgeInsets.all(contentPadding ?? 20.0),
         errorStyle: TextStyle(
-          // fontSize: FontSize.size10,
+          fontSize: getDeviceType() == 'tablet'
+              ? FontSize.size12.sp
+              : FontSize.size10.sp,
+          fontWeight: FontWeight.bold,
           color: ColorManager.error,
         ),
         fillColor: Theme.of(context).scaffoldBackgroundColor,
         filled: true,
         labelText: label,
         hintText: hint,
-        // labelColor
-        labelStyle: TextStyle(
-            color: HomeCubit.get(context).isDark
-                ? ColorManager.white
-                : ColorManager.mainPrimaryColor4,
-            height: 1.5,
-            fontSize: FontSize.size14),
-        hintStyle: TextStyle(
-            color: Theme.of(context).textTheme.bodyText1!.color,
-            height: 1.5,
-            fontSize: FontSize.size12),
+        labelStyle: getDeviceType() == 'tablet'
+            ? getBoldBlack14Style()
+            : getBoldBlack12Style(),
+        hintStyle: hintStyle ?? getRegularGray12Style(),
         prefixIcon: prefix,
-        prefixIconColor: HomeCubit.get(context).isDark
-            ? ColorManager.white
-            : ColorManager.mainPrimaryColor4,
         suffixIcon: suffix != null
             ? IconButton(
                 onPressed: () {
                   suffixClicked!();
                 },
-                icon: Icon(suffix,
-                    // suffixIconColor
-                    color: ColorManager.mainPrimaryColor4),
+                icon: svgImage != null
+                    ? SvgPicture.asset(svgImage!)
+                    : Icon(
+                        suffix,
+                        color: ColorManager.textGrey,
+                      ),
               )
             : null,
         // Theme.of(context).backgroundColor
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(
-            color: Theme.of(context).textTheme.bodyText1!.color!,
-            width: 1,
-          ),
-          borderRadius: BorderRadius.circular(AppSize.size10),
+          borderSide: BorderSide(width: 1.w, color: ColorManager.textGrey3),
+          borderRadius: BorderRadius.circular(8),
         ),
         focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
-                color: Theme.of(context).textTheme.bodyText1!.color!, width: 2),
-            borderRadius: BorderRadius.circular(10)),
+            borderSide: BorderSide(width: 1.w, color: ColorManager.textGrey3),
+            borderRadius: BorderRadius.circular(8)),
         focusedErrorBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.red, width: 3),
-            borderRadius: BorderRadius.circular(10)),
+            borderRadius: BorderRadius.circular(8)),
         errorBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: Colors.red, width: 2),
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
+        alignLabelWithHint: alignLabelWithHint,
       ),
     );
   }

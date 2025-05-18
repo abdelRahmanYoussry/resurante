@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:resturente/core/utils/shared/app/color_manager.dart';
+import 'package:resturente/core/utils/shared/app/values_manager.dart';
 
-import '../app/color_manager.dart';
-import '../app/values_manager.dart';
 
 class MyCustomDivider extends StatelessWidget {
-  const MyCustomDivider({Key? key}) : super(key: key);
+  const MyCustomDivider({super.key});
 
   @override
   Widget build(BuildContext context) {

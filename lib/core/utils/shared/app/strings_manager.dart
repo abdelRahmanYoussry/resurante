@@ -1,12 +1,12 @@
 // ignore_for_file: unnecessary_string_escapes
 
-import '../chace_helper/cache_helper.dart';
-
 class AppStrings {
   static const String noRoute = "No Route Found";
   static const String skip = "Skip";
-  static const String appName = '7ssasY';
-  static bool isDark() => CacheHelper.getSharedPreferencesValue(key: 'isDark');
+  static const String appName = 'Foodgo';
+  // static bool isDark() => CacheHelper.getData(key: 'isDark');
+  static const String start = "start";
+  static const String kUserKey = "kUserKey";
 
   // login and register main text
   static const String loginMainButton = "Login";
@@ -60,6 +60,9 @@ class AppStrings {
 
 // string to save on boarding boolean
   static const String cachedOnBoarding = 'CACHED_ONBOARDING';
+  static const String userData = 'user_data';
+  static const String studentPersonalData = 'student_personal_data';
+  static const String teacherPersonalData = 'teacher_personal_data';
   static const String cachedStudentBool = 'CACHED_Student_Bool';
   static const String cachedTeacherBool = 'CACHED_Teacher_Bool';
   static const String registerTypeBool = 'REGISTER_TYPE_STRING';
@@ -72,22 +75,45 @@ class AppStrings {
   static const String arabicCode = 'ar';
   static const String localCode = 'locale';
   static const String mainColor = 'mainColor';
+  static const String isSecondStepCompletedString =
+      'isSecondStepCompletedFromShared';
+  static const String isFirstStepCompletedString = 'isFirstStepCompleted';
+  static const String userSkipRegisterString = 'userSkipRegisterVlaue';
 
   //API Headers
   static const String applicationJson = 'application/json';
   static const String contentType = 'Content-Type';
 
   //Shared Strings
+  // static Future<bool> isSecondStepCompletedFromSharedNew(
+  //     {required bool isSecondStepCompleted}) async {
+  //   CacheHelper.saveDataToSharedPreferences(
+  //       key: isSecondStepCompletedString, value: isSecondStepCompleted);
+  //   return isSecondStepCompleted;
+  // }
+  //
+  // static Future<bool> isFirstStepCompletedNew(
+  //     {required bool isFirstStepCompleted}) async {
+  //   CacheHelper.saveDataToSharedPreferences(
+  //       key: isFirstStepCompletedString, value: isFirstStepCompleted);
+  //   return isFirstStepCompleted;
+  // }
+
   static bool isSecondStepCompletedFromShared(
       {required bool isSecondStepCompleted}) {
-    CacheHelper.saveDataToSharedPreferences(
-        key: 'isSecondStepCompletedFromShared', value: isSecondStepCompleted);
+    // CacheHelper.saveData(
+    //     key: isSecondStepCompletedString, value: isSecondStepCompleted);
     return isSecondStepCompleted;
   }
 
   static bool isFirstStepCompleted({required bool isFirstStepCompleted}) {
-    CacheHelper.saveDataToSharedPreferences(
-        key: 'isFirstStepCompleted', value: isFirstStepCompleted);
+    // CacheHelper.saveData(
+    //     key: isFirstStepCompletedString, value: isFirstStepCompleted);
     return isFirstStepCompleted;
+  }
+
+  static bool isSkipRegister({required bool isSkip}) {
+    // CacheHelper.saveData(key: userSkipRegisterString, value: isSkip);
+    return isSkip;
   }
 }

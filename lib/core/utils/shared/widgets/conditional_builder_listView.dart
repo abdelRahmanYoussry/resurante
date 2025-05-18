@@ -1,8 +1,6 @@
-// ignore_for_file: file_names, prefer_typing_uninitialized_variables, must_be_immutable
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
-
-import 'class_main_divider.dart';
+import 'package:resturente/core/utils/shared/widgets/class_main_divider.dart';
 
 class MyConditionalBuilderWithListView extends StatelessWidget {
   MyConditionalBuilderWithListView({

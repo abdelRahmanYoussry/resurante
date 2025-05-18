@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-
-import '../app/values_manager.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyCustomDividerSize5 extends StatelessWidget {
-  const MyCustomDividerSize5({Key? key}) : super(key: key);
+  const MyCustomDividerSize5({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: MediaQuery.of(context).size.height / AppSize.size70,
+      height: 15.h,
+      // height: MediaQuery.of(context).size.height / AppSize.size70,
     );
   }
 }

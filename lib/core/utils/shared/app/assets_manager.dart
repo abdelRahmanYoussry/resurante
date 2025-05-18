@@ -1,16 +1,29 @@
+// ignore_for_file: constant_identifier_names
+
 const String imagePath = "assets/images";
+const String gifPath = "assets/gifs";
+const String icons = "assets/icons";
 
 class ImageAssets {
-  static const String splashLogo = "$imagePath/splash_logo.png";
-  static const String onBoardingLogo1 = "$imagePath/onboarding_logo1.svg";
-  static const String onBoardingLogo2 = "$imagePath/onboarding_logo2.svg";
-  static const String onBoardingLogo3 = "$imagePath/onboarding_logo3.svg";
-  static const String onBoardingLogo4 = "$imagePath/onboarding_logo4.svg";
-  static const String hollowCirlce = "$imagePath/hollow_cirlce_ic.svg";
-  static const String leftArrow = "$imagePath/left_arrow_ic.svg";
-  static const String rightArrow = "$imagePath/right_arrow_ic.svg";
-  static const String solidCircle = "$imagePath/solid_circle_ic.svg";
-  static const String userAvatar = "$imagePath/userAvatar.png";
+  // static const String splashLogo = "$imagePath/splash_logo.png";
+  static const String splashLogo1 = "$imagePath/splash1.png";
+  static const String splashLogo2 = "$imagePath/splash2.png";
+  static const String creditCardWarning = "$icons/credit_card_warning.svg";
+  static const String credit_card_1 = "$imagePath/credit_card1.png";
+  static const String credit_card_2 = "$imagePath/credit_card2.png";
+  static const String credit_card_3 = "$imagePath/credit_card3.png";
+  static const String logoIcon = "$imagePath/logo.png";
+  static const String noInternetImage = "$imagePath/wifi_off.gif";
+  // static const String test_svg = "$imagePath/test.svg";
+  static const String splashLogo_png = "$imagePath/logo.png";
+  static const String noCurrentSessionImage = "$imagePath/noCurrentSession.svg";
+  static const String noPreviousSessionImage =
+      "$imagePath/noPreviousSession.svg";
+  static const String userAvatar1 = "$imagePath/userAvatar.png";
+  static const String userAvatar = "$imagePath/person_profile-fill.png";
+  static const String finishImage = "$imagePath/finishImage.svg";
+  static const String successReserveClass =
+      "$imagePath/successReserveClass.svg";
   static const String appBackGroundImage = "$imagePath/backgroundPicture.jpg";
   static const String profileExample = "$imagePath/abdo.jpg";
   static const String visaPay = "$imagePath/visa.png";
@@ -24,4 +37,76 @@ class ImageAssets {
   static const String americanExpress = "$imagePath/american_express.png";
   static const String cashIcon = "$imagePath/cash_icon.png";
   static const String visaIcon = "$imagePath/visa_icon.png";
+  static const String noData = "$imagePath/noData.svg";
+  static const String finishActivation = "$imagePath/finishActiveImage.svg";
+  static const String successActivation = "$imagePath/successImage.svg";
+  static const String forgetPasswordImage = "$imagePath/forgetPassword.svg";
+  static const String otbForgetPassword = "$imagePath/otbImage.svg";
+  static const String resetPasswordImage = "$imagePath/resetPassword.svg";
+  static const String hassyBackgroundImage = "$imagePath/hassyBackGround.png";
+  static const String creditCardBackgroundImage =
+      "$imagePath/creditCardBgImage.png";
+//////////////////////////////////////////////////////
+  static const String updateIcon = "$icons/icon_edit-fill.svg";
+  static const String confirmIcon = "$icons/confirmIcon.svg";
+  static const String walletIcon = "$icons/empty-wallet.svg";
+  static const String helpIcon = "$icons/help_icon.svg";
+  static const String homeIcon = "$icons/home_Icon.svg";
+  static const String locationIcon = "$icons/icons_location.svg";
+  static const String shieldIcon = "$icons/shield-tick.svg";
+  static const String userIcon = "$icons/user_transparent.svg";
+  static const String deleteIcon = "$icons/delete_icon.svg";
+  static const String chatIcon = "$icons/chatIcon.svg";
+  static const String alertIcon = "$icons/alertIcon.svg";
+  static const String settingIcon = "$icons/settingIcon.svg";
+  static const String logOutIcon = "$icons/logOutIcon.svg";
+  static const String calendarIcon = "$icons/calendarIcon.svg";
+  static const String completeResetPasswordImage =
+      "$imagePath/completeChangePassword.svg";
+  static const String alertTriangleIcon = "$icons/alert-triangle.svg";
+  static const String creditCardIcon = "$icons/credit_card_icon.svg";
+  static const String timerIcon = "$icons/timer.svg";
+  static const String dollarIcon = "$icons/dollarIcon.svg";
+  static const String personIcon = "$icons/personIcon.svg";
+  static const String uploadIcon = "$icons/uploadIcon.svg";
+  static const String moreIcon = "$icons/moreIcon.svg";
+  static const String searchIcon = "$icons/searchIcon.svg";
+  static const String filterIcon = "$icons/filter.svg";
+  static const String messageIcon = "$icons/messageIcon.svg";
+  static const String checkIcon = "$icons/checkIcon.svg";
+  static const String startIcon = "$icons/startIcon.svg";
+  static const String startWhiteIcon = "$icons/startWhiteIcon.svg";
+  static const String attendanceIcon = "$icons/attendanceIcon.svg";
+  static const String attendanceWhiteIcon = "$icons/attendanceWhiteIcon.svg";
+  static const String finishIcon = "$icons/finishIcon.svg";
+  static const String finishWhiteIcon = "$icons/endWhiteIcon.svg";
+  static const String moneyIcon = "$icons/moneyIcon.svg";
+  static const String moneyNewIcon = "$icons/wallet3.svg";
+  static const String notificationIcon = "$icons/notificationIcon.svg";
+  static const String logOutImageIcon = "$icons/logOutIconImage.svg";
+  static const String idIcon = "$icons/idIcon.svg";
+  static const String certificateIcon = "$icons/certificateIcon.svg";
+  static const String successReserveSession = "$icons/rectangle.png";
+  static const String lock = "$icons/lock.svg";
+  static const String email = "$icons/Apple_logo.svg";
+  static const String logo = "$icons/logo.svg";
+  static const String imagePlaceHolder = "$icons/image_place_holder.svg";
+  static const String completeRegister = "$icons/complete_register.png";
+  static const String completeRegisterNew = "$icons/complete_registerNew.svg";
+  static const String location = "$icons/location.svg";
+  static const String phone = "$icons/phone.svg";
+  static const String verificationImage = "$icons/verificationImage.svg";
+  static const String showPassword = "$icons/showPassword.svg";
+  static const String hidePassword = "$icons/hidePassword.svg";
+  static const String google = "$icons/google.svg";
+  static const String apple = "$icons/Apple_logo.svg";
+  static const String groupIcon = "$icons/pincel.png";
+  static const String idImage = "$icons/id-outline.svg";
+  static const String emailImage = "$icons/email_image.svg";
+  static const String datePickerImage = "$icons/date_picker.svg";
+}
+
+class GifAssets {
+  static const String splashGif = "$gifPath/Flow new.json";
+  static const String splashGif2 = "$gifPath/Flow 3.json";
 }

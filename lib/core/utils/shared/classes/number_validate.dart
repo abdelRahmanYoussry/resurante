@@ -7,7 +7,10 @@ import '../translations/locale_keys.g.dart';
 String? validateNumber(String? value) {
   String pattern = r'^\d+$';
   RegExp regex = RegExp(pattern);
-  if (value == null || value.isEmpty || !regex.hasMatch(value)) {
+  if (value == null ||
+      value.isEmpty ||
+      !regex.hasMatch(value) ||
+      value.length != 14) {
     return LocaleKeys.numberIsNotValid.tr();
   } else {
     return null;

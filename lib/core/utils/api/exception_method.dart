@@ -6,6 +6,6 @@ class HandleException implements Exception {
 
   @override
   String toString() {
-    return 'KoException: statusCode: $statusCode, message: ${message ?? 'No message specified'}';
+    return ' ${message ?? 'No message specified'}';
   }
 }

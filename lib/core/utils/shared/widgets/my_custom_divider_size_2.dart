@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../app/values_manager.dart';
 
 class MyCustomDividerSize2 extends StatelessWidget {
-  const MyCustomDividerSize2({Key? key}) : super(key: key);
+  const MyCustomDividerSize2({super.key});
 
   @override
   Widget build(BuildContext context) {
