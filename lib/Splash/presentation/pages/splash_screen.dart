@@ -2,13 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:resturente/core/utils/shared/app/assets_manager.dart';
 import 'package:resturente/core/utils/shared/app/color_manager.dart';
-import 'package:resturente/core/utils/shared/app/strings_manager.dart';
+import 'package:resturente/core/utils/shared/app_routes/routes_manager.dart';
+import 'package:resturente/core/utils/shared/components/components.dart';
 
-import '../../../core/utils/shared/app/styles_manager.dart';
+import '../../../core/utils/shared/app/strings_manager.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(seconds: 3), () {
+   navigateAndFinish(context, routeName: Routes.mainScreen);
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,10 +44,19 @@ class SplashScreen extends StatelessWidget {
           fit: StackFit.loose,
           alignment: AlignmentDirectional.bottomStart,
           children: [
-            Center(
-              child: Text(
-                AppStrings.appName,
-                style: getBoldWhite40Style(),
+            Positioned(
+              top: 282.h, // adjust as needed
+              left: 0,
+              right: 0,
+              child: const Center(
+                child: Text(
+                  AppStrings.appName,
+                  style: TextStyle(
+                    fontFamily: 'Lobster',
+                    fontSize: 60,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
             Image.asset(

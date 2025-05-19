@@ -7,6 +7,7 @@ class AppStrings {
   // static bool isDark() => CacheHelper.getData(key: 'isDark');
   static const String start = "start";
   static const String kUserKey = "kUserKey";
+  static const String lobsterFontFamily = "Lobster";
 
   // login and register main text
   static const String loginMainButton = "Login";
