@@ -1,13 +1,27 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:resturente/Splash/presentation/pages/splash_screen.dart';
+import 'package:resturente/core/utils/shared/app/navigation_service.dart';
+import 'package:resturente/core/utils/shared/app_routes/routes_manager.dart';
 import 'package:resturente/core/utils/shared/style/Theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.light,
+    ),
+  );
+
+  SystemChrome.setPreferredOrientations(
+    [
+      DeviceOrientation.portraitUp,
+    ],
+  );
   runApp(const MyApp());
 }
 
@@ -26,16 +40,10 @@ class MyApp extends StatelessWidget {
           // supportedLocales: context.supportedLocales,
           // locale: context.locale,
           theme: lightTheme,
-          // navigatorKey: NavigationService.navigatorKey,
+          navigatorKey: NavigationService.navigatorKey,
           debugShowCheckedModeBanner: false,
-          home: SplashScreen(),
-          // onGenerateRoute: RouteGenerator.getRoute,
-          // initialRoute: Routes.splashRoute,
-          // builder: (context, child) {
-          //   return NoInternetConnection(
-          //     connectionWidget: child ?? const SizedBox.shrink(),
-          //   );
-          // },
+          onGenerateRoute: RouteGenerator.getRoute,
+          initialRoute: Routes.splashRoute,
         );
       },
     );

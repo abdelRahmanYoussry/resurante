@@ -108,7 +108,7 @@ class MyTextFormField extends StatelessWidget {
         hintText: hint,
         labelStyle: getDeviceType() == 'tablet'
             ? getBoldBlack14Style()
-            : getBoldBlack12Style(),
+            : getBoldBlack16Style(),
         hintStyle: hintStyle ?? getRegularGray12Style(),
         prefixIcon: prefix,
         suffixIcon: suffix != null
@@ -127,17 +127,17 @@ class MyTextFormField extends StatelessWidget {
         // Theme.of(context).backgroundColor
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(width: 1.w, color: ColorManager.textGrey3),
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(20),
         ),
         focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(width: 1.w, color: ColorManager.textGrey3),
-            borderRadius: BorderRadius.circular(8)),
+            borderRadius: BorderRadius.circular(20)),
         focusedErrorBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.red, width: 3),
-            borderRadius: BorderRadius.circular(8)),
+            borderRadius: BorderRadius.circular(20)),
         errorBorder: OutlineInputBorder(
           borderSide: const BorderSide(color: Colors.red, width: 2),
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.circular(20),
         ),
         alignLabelWithHint: alignLabelWithHint,
       ),

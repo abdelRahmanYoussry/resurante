@@ -281,6 +281,14 @@ TextStyle getBoldWhite40Style() {
   );
 }
 
+TextStyle getRegularWhite40Style() {
+  return _getTextStyle(
+    FontSize.size40.sp,
+    FontWeightManager.regular,
+    ColorManager.white,
+  );
+}
+
 TextStyle getBoldBlack13Style() {
   return _getTextStyle(
     FontSize.size13.sp,

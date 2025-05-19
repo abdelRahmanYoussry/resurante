@@ -8,6 +8,8 @@ class ImageAssets {
   // static const String splashLogo = "$imagePath/splash_logo.png";
   static const String splashLogo1 = "$imagePath/splash1.png";
   static const String splashLogo2 = "$imagePath/splash2.png";
+  static const String userImage = "$imagePath/user_image.jpeg";
+  static const String splashLogo_svg = "$imagePath/logo_svg.svg";
   static const String creditCardWarning = "$icons/credit_card_warning.svg";
   static const String credit_card_1 = "$imagePath/credit_card1.png";
   static const String credit_card_2 = "$imagePath/credit_card2.png";
@@ -48,13 +50,17 @@ class ImageAssets {
       "$imagePath/creditCardBgImage.png";
 //////////////////////////////////////////////////////
   static const String updateIcon = "$icons/icon_edit-fill.svg";
+  static const String searchBlackIcon = "$icons/search_black_icon.svg";
+  static const String settingsIcon = "$icons/settings-sliders.png";
+  static const String homeIcon = "$icons/home_icon.svg";
+  static const String commentIcon = "$icons/comment_icon.svg";
+  static const String heartIcon = "$icons/heart_icon.svg";
   static const String confirmIcon = "$icons/confirmIcon.svg";
   static const String walletIcon = "$icons/empty-wallet.svg";
   static const String helpIcon = "$icons/help_icon.svg";
-  static const String homeIcon = "$icons/home_Icon.svg";
   static const String locationIcon = "$icons/icons_location.svg";
   static const String shieldIcon = "$icons/shield-tick.svg";
-  static const String userIcon = "$icons/user_transparent.svg";
+  static const String userIcon = "$icons/user_icon.svg";
   static const String deleteIcon = "$icons/delete_icon.svg";
   static const String chatIcon = "$icons/chatIcon.svg";
   static const String alertIcon = "$icons/alertIcon.svg";
@@ -104,9 +110,4 @@ class ImageAssets {
   static const String idImage = "$icons/id-outline.svg";
   static const String emailImage = "$icons/email_image.svg";
   static const String datePickerImage = "$icons/date_picker.svg";
-}
-
-class GifAssets {
-  static const String splashGif = "$gifPath/Flow new.json";
-  static const String splashGif2 = "$gifPath/Flow 3.json";
 }
