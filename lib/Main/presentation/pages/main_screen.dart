@@ -102,7 +102,6 @@ class _MainScreenState extends State<MainScreen> {
                 onTap: () => _onItemTapped(1),
               ),
               const SizedBox(width: 60), // gap for FAB
-
               NavIconButton(
                 imagePath: ImageAssets.commentIcon,
                 isSelected: _selectedIndex == 3,

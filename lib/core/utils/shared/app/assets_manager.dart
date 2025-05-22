@@ -24,6 +24,10 @@ class ImageAssets {
   static const String userAvatar1 = "$imagePath/userAvatar.png";
   static const String userAvatar = "$imagePath/person_profile-fill.png";
   static const String finishImage = "$imagePath/finishImage.svg";
+  static const String itemImage = "$imagePath/item.png";
+  static const String item2Image = "$imagePath/item2.png";
+  static const String item3Image = "$imagePath/item3.png";
+  static const String item4Image = "$imagePath/item4.png";
   static const String successReserveClass =
       "$imagePath/successReserveClass.svg";
   static const String appBackGroundImage = "$imagePath/backgroundPicture.jpg";
@@ -56,6 +60,8 @@ class ImageAssets {
   static const String commentIcon = "$icons/comment_icon.svg";
   static const String heartIcon = "$icons/heart_icon.svg";
   static const String confirmIcon = "$icons/confirmIcon.svg";
+  static const String emptyHeartIcon = "$icons/empty_heart_icon.svg";
+  static const String starIcon = "$icons/star_icon.svg";
   static const String walletIcon = "$icons/empty-wallet.svg";
   static const String helpIcon = "$icons/help_icon.svg";
   static const String locationIcon = "$icons/icons_location.svg";
