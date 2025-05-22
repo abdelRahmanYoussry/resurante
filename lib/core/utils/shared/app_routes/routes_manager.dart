@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:resturente/Home/presentation/pages/home_screen.dart';
+import 'package:resturente/Home/presentation/pages/item_details_screen.dart';
 import 'package:resturente/Main/presentation/pages/main_screen.dart';
 
 import '../../../../Splash/presentation/pages/splash_screen.dart';
@@ -15,6 +16,7 @@ class Routes {
   static const String splashRoute = 'splash';
   static const String homeRoute = 'HomeScreen';
   static const String mainScreen = 'MainScreen';
+  static const String detailsScreen = 'detailsScreen';
 }
 
 /// this is main class to generate route dynamic in all app screens
@@ -32,6 +34,13 @@ class RouteGenerator {
       case Routes.mainScreen:
         return MaterialPageRoute(
           builder: (context) => const MainScreen(),
+        );
+      case Routes.detailsScreen:
+        final arguments = settings.arguments as ItemDetailsArguments;
+        return MaterialPageRoute(
+          builder: (context) => ItemDetailsScreen(
+            itemModel: arguments.itemModel,
+          ),
         );
       default:
         return unDefinedRoute();

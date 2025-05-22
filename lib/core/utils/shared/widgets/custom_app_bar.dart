@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:resturente/core/utils/shared/app/color_manager.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   CustomAppBar({
@@ -58,21 +57,29 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.pop(context);
                 // }
               },
-              child: Container(
-                margin: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
-                decoration: BoxDecoration(
-                  color: ColorManager.textGrey6,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                // radius: getDeviceType() == 'tablet' ? 30 : 10,
-                // backgroundColor: ColorManager.textGrey6,
-                child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.w),
-                  child: Icon(
-                    Icons.arrow_back_ios,
-                    color: Colors.black,
-                    size: getDeviceType() == 'tablet' ? 14.w : 20.w,
-                  ),
+              // child: Container(
+              //   margin: EdgeInsets.symmetric(horizontal: 10.w, vertical: 10.h),
+              //   decoration: BoxDecoration(
+              //     color: ColorManager.textGrey6,
+              //     borderRadius: BorderRadius.circular(10),
+              //   ),
+              //   // radius: getDeviceType() == 'tablet' ? 30 : 10,
+              //   // backgroundColor: ColorManager.textGrey6,
+              //   child: Padding(
+              //     padding: EdgeInsets.symmetric(horizontal: 10.w),
+              //     child: Icon(
+              //       Icons.arrow_back,
+              //       color: Colors.black,
+              //       size: getDeviceType() == 'tablet' ? 14.w : 20.w,
+              //     ),
+              //   ),
+              // ),
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.w),
+                child: Icon(
+                  Icons.arrow_back,
+                  color: Colors.black,
+                  size: getDeviceType() == 'tablet' ? 14.w : 20.w,
                 ),
               ),
             )

@@ -65,6 +65,14 @@ TextStyle getBoldBlack16Style() {
   );
 }
 
+TextStyle getBoldBlack25Style() {
+  return _getTextStyle(
+    FontSize.size25.sp,
+    FontWeightManager.bold,
+    ColorManager.textColorBoldBlack,
+  );
+}
+
 TextStyle getMediumBlack16Style() {
   return _getTextStyle(
     FontSize.size16.sp,
@@ -225,6 +233,14 @@ TextStyle getMediumGrey16Style() {
   );
 }
 
+TextStyle getMediumGrey15Style() {
+  return _getTextStyle(
+    FontSize.size15.sp,
+    FontWeightManager.medium,
+    ColorManager.textGrey,
+  );
+}
+
 TextStyle getMediumGrey9Style() {
   return _getTextStyle(
     FontSize.size9.sp,
@@ -308,6 +324,14 @@ TextStyle getBoldWhite14Style() {
 TextStyle getBoldWhite18Style() {
   return _getTextStyle(
     FontSize.size18.sp,
+    FontWeightManager.bold,
+    ColorManager.white,
+  );
+}
+
+TextStyle getBoldWhite16Style() {
+  return _getTextStyle(
+    FontSize.size16.sp,
     FontWeightManager.bold,
     ColorManager.white,
   );
@@ -444,6 +468,22 @@ TextStyle getBoldBlue8Style() {
 TextStyle getMediumBlue8Style() {
   return _getTextStyle(
     FontSize.size8.sp,
+    FontWeight.w500,
+    ColorManager.mainPrimaryColor4,
+  );
+}
+
+TextStyle getMediumGreen12Style() {
+  return _getTextStyle(
+    FontSize.size12.sp,
+    FontWeight.w500,
+    ColorManager.greenColor,
+  );
+}
+
+TextStyle getMediumRed12Style() {
+  return _getTextStyle(
+    FontSize.size12.sp,
     FontWeight.w500,
     ColorManager.mainPrimaryColor4,
   );
